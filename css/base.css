@@ -1,0 +1,389 @@
+/* CSS Document */
+
+/* CSS Reset */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {margin:0; padding:0;}
+fieldset, img {border:none;}
+img{display: block;}
+address, caption, cite, code, dfn, th, var {font-style:normal; font-weight:normal;}
+ul, ol {list-style:none;}
+input {padding-top:0; padding-bottom:0; font-family:"微软雅黑","Microsoft Yahei","宋体";}
+input::-moz-focus-inner {border:none; padding:0;}
+select, input {vertical-align:middle;}
+select, input, textarea {font-size:12px; margin:0;}
+input[type="text"], input[type="password"], textarea {outline-style:none; -webkit-appearance:none;}
+textarea {resize:none;}
+table {border-collapse:collapse;}
+body{background:#fff; font:12px/20px "微软雅黑","Microsoft Yahei","黑体","Arial"; color:#333;}
+.clearfix:after {content:"."; display:block; height:0; visibility:hidden; clear:both;}
+.clearfix {zoom:1;}
+.clearit {clear:both; height:0; font-size:0; overflow:hidden;}
+a {color:#555; text-decoration:none; cursor:pointer;}
+a:hover{color:#e60; text-decoration:underline;}
+
+/* CSS Main */
+
+/* =====公用样式===== */
+/* 页面结构 */
+.indexTop{width:100%; height:480px; overflow:hidden; position:relative;} 
+.pageTop{width:100%; height:80px; overflow:hidden; position:relative; background-color:#fff;} 
+.topArea{width:1000px; height:80px; margin:0px auto; position:relative; z-index:4;}
+.topArea .logo{position:absolute; left:10px; top:9px; overflow:hidden;}
+.topArea .logo2 {position: absolute; left: 10px; top: 3px;}
+.topArea .menu{position:absolute; right:20px; top:0px; height:80px; overflow:hidden;}
+.indexMain{width:100%; background-color:#fff; padding:20px 0px;}
+.pageWrap{width:100%; overflow:hidden;}
+.pageMain{width:960px; padding:20px; overflow:hidden; margin:200px auto 10px; background:url(../images/mainbody.png)/*tpa=http://www.ebidding.com.cn/r/cms/www/default/images/mainbody.png*/ repeat 0px 0px; position:relative;}
+.leftMenu{width:200px; overflow:hidden; float:left;}
+.leftMenu.fix{position:fixed; top:0px;}
+.rightCon{width:700px; overflow:hidden; padding:0px 20px 0px 40px; float:right;}
+.sideBar{width:54px; overflow:hidden; position:fixed; right:10px; bottom:70px; z-index:5;}
+
+/* 网站logo */
+.logo{width:259px; height:62px;}
+.logo a{width:239px; height:42px; padding:10px; float:left; background:url(../images/bg.png)/*tpa=http://www.ebidding.com.cn/r/cms/www/default/images/bg.png*/ no-repeat 0px 0px; font-size:0px; line-height:0px; text-indent:-999em;}
+
+/* 导航菜单 */
+.menu{overflow:hidden;}
+.menu li{float:left; height:80px; overflow:hidden;}
+.menu li a{float:left; padding:33px 0px; height:14px; font-size:14px; font-weight:bold; line-height:14px; overflow:hidden; color:#555;}
+.menu li a:hover,.menu li.current_item a{text-decoration:none; color:#e60;font-weight:bold; }
+.menu li a span{height:14px; line-height:14px; padding:0px 16px; display:block;}
+.menu li + li a span{border-style:solid; border-color:transparent; border-width:0px 0px 0px 1px;}
+.menu li.curLine{position:absolute; bottom:0px; left:0; width:100px; height:3px; background-color:#e60;}
+.pageTop .menu li + li a span{border-left:#eee 1px solid;}
+
+/* banner滚动图 */
+.banner{width:100%; height:480px; position:absolute; top:0px; left:0px;}
+.banner .banWrap00,.banner .banWrap01,.banner .banWrap02,.banner .banWrap03,.banner .banWrap04,.banner .banWrap05,.banner .banWrap06,.banner .banWrap07,.banner .banWrap08,.banner .banWrap09{width:100%; height:480px; overflow:hidden; position:absolute; top:0px; left:0px; z-index:2;}
+.banner .banMain{width:1000px; height:400px; margin:0px auto; position:relative; top:80px; z-index:3;}
+/* .banner .banNum{width:980px; height:30px; margin:0px auto; padding-left:20px; position:relative; top:420px; z-index:4;}*/
+.banner .banNum {
+    width: 500px;
+    height: 30px;
+    margin: 0px auto;
+    padding-left: 20px;
+    position: relative;
+    top: 420px;
+    z-index: 4;
+    left: -242px;
+}
+.banMain .banTxt{position:absolute; top:60px; left:0px;}
+.banMain .banPic{position:absolute; z-index:3;}
+.banMain .banBtn{position:absolute; top:190px; left:20px; z-index:4;}
+.banMain .banBtn a{width:180px; height:50px; float:left; background:url(../images/banBtn.png)/*tpa=http://www.ebidding.com.cn/r/cms/www/default/images/banBtn.png*/ no-repeat 0px 0px; font-size:0px; line-height:0px; text-indent:-999em;}
+.banMain .banBtn a.btnB{background-position:0px 0px;}
+.banMain .banBtn a.btnB:hover{background-position:0px -50px;}
+.banMain .banBtn a.btnG{background-position:-180px 0px;}
+.banMain .banBtn a.btnG:hover{background-position:-180px -50px;}
+.banMain .banBtn a.btnR{background-position:-360px 0px;}
+.banMain .banBtn a.btnR:hover{background-position:-360px -50px;}
+/* banner背景与图片 */
+.banWrap09 {
+   /* background: url(../images/banBg16.png) no-repeat center bottom;*/
+background: no-repeat center bottom;
+}
+.banWrap09 .banMain .banPic {
+    position: absolute;
+    bottom: 0px;
+    right: -220px;
+}
+.banWrap08 {
+    background: url(../images/banBg09.jpg)/*tpa=http://www.ebidding.com.cn/r/cms/www/default/images/banBg09.jpg*/ no-repeat center bottom;
+}
+.banWrap08 .banMain .banPic {
+    position: absolute;
+    bottom: 0px;
+    right: -220px;
+}
+.banWrap07 {
+    background: url(../images/banPicMeeting.png)/*tpa=http://www.ebidding.com.cn/r/cms/www/default/images/banPicMeeting.png*/ no-repeat center bottom;
+}
+.banWrap07 .banMain .banPic {
+    position: absolute;
+    bottom: 0px;
+    right: -220px;
+}
+.banWrap06 {
+    background: url(../images/banBg11.jpg)/*tpa=http://www.ebidding.com.cn/r/cms/www/default/images/banBg11.jpg*/ no-repeat center bottom;
+}
+.banWrap06 .banMain .banPic {
+    position: absolute;
+    bottom: 0px;
+    right: -220px;
+}
+.banWrap06 .banBtn {
+    top: 200px;
+}
+.banWrap05{background:url(../images/banBg05.jpg)/*tpa=http://www.ebidding.com.cn/r/cms/www/default/images/banBg05.jpg*/ no-repeat center bottom;}
+.banWrap05 .banMain .banPic{position:absolute; bottom:0px; right:-120px;}
+.banWrap04{background:url(../images/banBg04.jpg)/*tpa=http://www.ebidding.com.cn/r/cms/www/default/images/banBg04.jpg*/ no-repeat center bottom;}
+.banWrap04 .banMain .banPic{position:absolute; bottom:0px; right:-200px;}
+.banWrap03{background:url(../images/banBg03.jpg)/*tpa=http://www.ebidding.com.cn/r/cms/www/default/images/banBg03.jpg*/ no-repeat center bottom;}
+.banWrap03 .banMain .banPic{position:absolute; bottom:0px; right:-160px;}
+.banWrap02{background:url(../images/banBg02.jpg)/*tpa=http://www.ebidding.com.cn/r/cms/www/default/images/banBg02.jpg*/ no-repeat center bottom;}
+.banWrap02 .banMain .banPic{position:absolute; bottom:0px; right:170px;}
+.banWrap02 .banMain .bp02{position:absolute; bottom:100px; right:-20px;}
+.banWrap01{background:url(../images/banBg01.jpg)/*tpa=http://www.ebidding.com.cn/r/cms/www/default/images/banBg01.jpg*/ no-repeat center bottom;}
+.banWrap01 .banMain .banPic{position:absolute; bottom:0px; right:-80px;}
+/* banner切换圆点 */
+.banNum a{float:left; width:26px; height:30px; font-size:0px; line-height:0px; text-indent:-999em; background:url(../images/bg.png)/*tpa=http://www.ebidding.com.cn/r/cms/www/default/images/bg.png*/ no-repeat; background-position:-35px -60px;}
+.banNum a:hover,.banNum a.cur{background-position:-4px -60px;}
+/* banner切换箭头*/
+.ArrowLeft,.ArrowRight{position:absolute; top:186px; width:30px; height:57px; padding:30px; background:url(../images/banArrow.png)/*tpa=http://www.ebidding.com.cn/r/cms/www/default/images/banArrow.png*/ no-repeat; font-size:0px; line-height:0px; text-indent:-999em; z-index:5;}
+.ArrowLeft{left:30px; background-position:30px 30px;}
+.ArrowLeft:hover{background-position:-90px 30px;}
+.ArrowRight{right:30px; background-position:-30px 30px;}
+.ArrowRight:hover{background-position:-150px 30px;}
+
+/* 内页左侧菜单 */
+.leftMenu dl{width:200px; overflow:hidden;}
+.leftMenu dl dt{width:200px; height:70px; padding-bottom:10px; float:left;}
+.leftMenu dl dt h3{width:140px; height:30px; line-height:30px; padding:20px 30px; float:left; color:#fff; font-size:18px; background:url(../images/pagesTitle.png)/*tpa=http://www.ebidding.com.cn/r/cms/www/default/images/pagesTitle.png*/ no-repeat 0px 0px;}
+.leftMenu dl dd{width:200px; height:48px; float:left; border-bottom:#eee 1px solid;}
+.leftMenu dl dd a{width:170px; height:48px; line-height:48px; padding-left:30px; float:left; font-size:14px; font-weight:bold; text-decoration:none; color:#666; position:relative;}
+.leftMenu dl dd a:hover,.leftMenu dl dd.cur a{background:url(../images/bg.png)/*tpa=http://www.ebidding.com.cn/r/cms/www/default/images/bg.png*/ no-repeat -10px -100px; font-weight:bold; color:#e60;}
+
+
+/* 右侧浮动 */
+.sideBar a{width:54px; height:54px; background:url(../images/sideBar.png)/*tpa=http://www.ebidding.com.cn/r/cms/www/default/images/sideBar.png*/ no-repeat 0px 0px; float:left; font-size:0px; line-height:0px; text-indent:-999em;}
+.sideBar a + a{margin-top:10px;}
+.sideBar a.custom{background-position:0px 0px;}
+.sideBar a.custom:hover{background-position:-54px 0px;}
+.sideBar a.weixin{background-position:0px -54px;}
+.sideBar a.weixin:hover{background-position:-54px -54px;}
+.sideBar a.backTop{background-position:0px -108px; display:none;}
+.sideBar a.backTop:hover{background-position:-54px -108px;}
+
+
+.custClose{width:100%; height:820px; position:absolute; top:0px; z-index:4; background-color:transparent; display:none;}
+
+.custCon{width:0px; overflow:hidden; padding:30px 0; background-color:#fff; position:fixed; right:74px; bottom:70px; z-index:9; box-shadow:#ccc 0px 0px 5px;}
+.custCon h3{width:370px; height:40px; line-height:40px; border-bottom:#eee 1px solid; font-size:24px; font-weight:normal; padding:0px 15px 10px 15px; position:relative; color:#ee4900;}
+.custCon h3 em{font-size:12px; color:#aaa; font-family:arial; font-style:normal; font-weight:normal; margin-left:10px;}
+.custCon h3 a{position:absolute; right:-20px; bottom:0px; width:20px; height:20px; padding:20px; background:url(../images/close.png)/*tpa=http://www.ebidding.com.cn/r/cms/www/default/images/close.png*/ no-repeat 20px 20px; font-size:0px; line-height:0px; color:#fff; text-indent:-999em;}
+.custCon h3 a:hover{background-position:-20px 20px;}
+.custCon ul{width:380px; padding:10px; overflow:hidden;}
+.custCon ul li{width:340px; float:left; padding:3px 0px 3px 40px; background:url(../images/custCon.png)/*tpa=http://www.ebidding.com.cn/r/cms/www/default/images/custCon.png*/ no-repeat 0px 0px;}
+.custCon ul li.qq{background-position:2px 0px;}
+.custCon ul li.tel{background-position:2px -57px;}
+.custCon ul li.fax{background-position:2px -116px;}
+.custCon ul li.mail{background-position:2px -174px;}
+.custCon ul li.addr{background-position:2px -232px;}
+.custCon ul li h4{width:340px; height:30px; line-height:30px; font-weight:bold; font-size:14px;}
+.custCon ul li p{width:340px; overflow:hidden; line-height:24px; color:#777;}
+.custCon ul li p em{font-style:normal; font-size:12px; font-weight:bold; color:#ee4900;}
+.custCon ul li p a{color:#ee4900; text-decoration:none;}
+.custCon ul li p a.cust{float:left;}
+
+.cademy{width:0px; height:270px; background-color:#fff; position:fixed; right:74px; bottom:70px; z-index:10; box-shadow:#ccc 0px 0px 5px; display:none;}
+
+
+/* 页面底部 */
+.footer{width:100%; height:60px; overflow:hidden; position:relative;  background-color:#f9f9f9;}
+.footer .ftCon{width:1000px; height:30px; line-height:30px; margin:0px auto; position:relative; top:15px; color:#999;}
+.ftCon .copyright,.ftCon .links{position:absolute; height:30px; line-height:30px; overflow:hidden;}
+.ftCon .copyright{left:0px;}
+.ftCon .copyright span{margin-left:10px; float:left; height:30px; line-height:30px;}
+.ftCon .copyright span a{position:relative; top:9px;}
+.ftCon .links{right:0px; text-align:right;}
+.ftCon .links ul{overflow:hidden;}
+.ftCon .links ul li{float:left;}
+.ftCon .links ul li a{color:#999; height:16px; line-height:16px; padding:0px 15px; border-left:#e6e6e6 1px solid;}
+
+/* 内页结构 */
+.rightCon h2{width:700px; border-bottom:#e5e5e5 1px solid; cursor:default; font-size:25px; font-weight:normal; color:#e60; text-decoration:none; float:left; padding:15px 0px; height:40px; line-height:40px;}
+.rightCon h2 em{font-size:14px; font-family:arial; font-style:normal; color:#aaa; margin-left:8px;}
+.rightCon .content{width:700px; float:left; padding:20px 0px; overflow:hidden; font-size:14px; line-height:36px; letter-spacing:0.6px; color:#555;}
+.rightCon .content p{padding:6px 0px; text-indent:2.0em; overflow:hidden; line-height:30px; float:left; width:100%;}
+.rightCon .content p img {display: inline;}
+.rightCon .content h3{height:40px; line-height:40px; width:650px; position:relative; font-size:17px; font-weight:bold; color:#e60;}
+.rightCon .content h3 a{float:left;}
+
+/* 右侧链接列表 */
+.textList{overflow:hidden; width:700px;}
+.textList li{width:700px; height:100px; padding-top:10px; padding-bottom:25px; float:left;}
+.textList li + li{border-top:#eee 1px solid; padding-top:25px;}
+.textList li .left{float:left; width:80px; height:100px; margin-right:20px;}
+.textList li .title{width:600px; height:40px; line-height:40px; float:left; font-size:15px; float:left; font-weight:bold; padding:0px; position:relative; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+.textList li .title a,.textList li .title em{float:left;}
+.textList li span.desc{width:600px; height:60px; line-height:30px; float:left; color:#888; overflow:hidden;}
+
+/* 左侧菜单下方的快捷入口 */
+/*.leftLinks{width:198px; height:60px; float:left; border:#eee 1px solid; margin-top:10px;}*/
+
+
+/* =====版块样式===== */
+
+/* 首页服务版块 */
+.indexMain .services{width:1000px; margin:0px auto; height:100px; overflow:hidden; padding:10px 0px; background:#fff;}
+.indexMain .services{overflow:hidden;}
+.indexMain .services li{width:300px; height:100px; float:left;}
+.indexMain .services li + li{margin-left:50px;}
+.indexMain .services .serPic{width:80px; height:80px; margin-top:10px; margin-right:20px; float:left; background:url(../images/services.png)/*tpa=http://www.ebidding.com.cn/r/cms/www/default/images/services.png*/ no-repeat 0px 0px; font-size:0px; line-height:0px; text-indent:-999em;}
+.indexMain .services .sp01{background-position:0px 0px;}
+.indexMain .services .sp02{background-position:-80px 0px;}
+.indexMain .services .sp03{background-position:-160px 0px;}
+.indexMain .services .sp04{background-position:-240px 0px;}
+.indexMain .services .sp05{background-position:-320px 0px;}
+.indexMain .services .serCon{width:200px; height:100px; float:left;}
+.indexMain .serCon h2{width:200px; height:40px; line-height:40px; font-size:14px; font-weight:bold; color:#555;}
+.indexMain .serCon h2 a{width:200px; height:40px; float:left;}
+.indexMain .serCon span{width:200px; height:60px; line-height:30px; overflow:hidden; color:#999; float:left;}
+
+/* 关于我们页面 */
+.about{background:url(../images/about.jpg)/*tpa=http://www.ebidding.com.cn/r/cms/www/default/images/about.jpg*/ no-repeat center 0px;}
+.about .leftMenu dl dt h3{background-position:0px 0px;}
+
+.about .content ul.abtList{overflow:hidden; float:left;}
+.about .content ul.abtList li{width:700px; line-height:30px; padding:8px 0px;}
+.about .content ul.abtList li strong{font-size:15px; color:#444;}
+.about .content ul.abtList li + li{border-top:#eee 1px dotted;}
+
+.about .process{width:700px;}
+.about .process .year{width:700px; overflow:hidden; border-bottom:#eee 1px solid; cursor:pointer;}
+.about .process .year td{padding:15px 10px;}
+.about .process .year strong{width:80px; height:80px; line-height:80px; text-align:center; font-size:17px; color:#e60; font-family:arial; border-radius:30px; border:#eee 2px solid; float:left;}
+.about .process .year strong.period{width:48px; height:48px; padding:16px; text-align:center; line-height:17px; overflow:hidden; font-size:14px;}
+.about .process .year ul{width:560px; padding:0px 10px; float:left;}
+.about .process .year ul li{width:560px; float:left; line-height:24px; padding:8px 0px; color:#666;}
+.about .process .year ul li em{color:#e60; font-weight:bold; font-style:normal; margin-right:7px;}
+
+.about .methodology{padding:20px 0px;}
+.about .meth{width:640px; border-top:#eee 1px solid; border-left:#eee 1px solid; margin:0px auto;}
+.about .meth th{background-color:#f9f9f9; font-weight:bold;}
+.about .meth th,.about .meth td{border-right:#eee 1px solid; border-bottom:#eee 1px solid; text-align:center; vertical-align:middle;}
+
+.about .rightCon h3{width:700px; height:40px; padding:10px 0px; float:left;}
+.about .rightCon h3 a{width:700px; height:40px; line-height:40px; color:#e60; cursor:default; text-decoration:none;}
+
+.about .contact{overflow:hidden;}
+.about .contact dt,.about .contact dd{width:700px; height:40px; line-height:40px;}
+.about .contact dt{font-size:17px; font-weight:bold; padding-bottom:15px; border-bottom:#eee 1px solid; margin-bottom:15px;}
+.about .contact dt em{margin-left:10px; font-size:12px; color:#999; font-style:normal; font-weight:normal;}
+.about .contact dd a,.about .contact dd strong,.about .contact dd em{float:left;}
+.about .contact dd a.cust{margin-top:2px;}
+.about .contact dd em{color:#ee4900; font-style:normal; font-weight:normal;}
+
+.about .map{width:698px; height:300px; border:#ccc 1px solid; margin-top:20px;}
+
+
+/* 产品与服务页面 */
+.services{background:url(../images/services.jpg)/*tpa=http://www.ebidding.com.cn/r/cms/www/default/images/services.jpg*/ no-repeat center 0px;}
+.services .leftMenu dl dt h3{background-position:0px -70px;}
+.services .leftMenu dl dd a:hover,.services .leftMenu dl dd.cur a{color:#007ccc;}
+.services .rightCon h2{color:#007ccc;}
+
+.services .serList{overflow:hidden;}
+.services .serList li{width:700px; float:left; overflow:hidden; padding-bottom:15px;}
+.services .serList li + li{border-top:#ddd 1px dotted; padding:15px 0px;}
+.services .serList li h3{width:700px; height:60px; float:left;}
+.services .serList li h3 a{width:650px; height:40px; float:left; margin:10px 0px; text-decoration:none; cursor:default; padding-left:50px; background:url(../images/service.png)/*tpa=http://www.ebidding.com.cn/r/cms/www/default/images/service.png*/ no-repeat 0px 0px; font-size:17px; font-weight:bold; color:#007ccc;}
+.services .serList li h3.sl01 a{background-position:0px 0px;}
+.services .serList li h3.sl02 a{background-position:0px -40px;}
+.services .serList li h3.sl03 a{background-position:0px -80px;}
+.services .serList li h3.sl04 a{background-position:0px -120px;}
+.services .serList li h3.sl05 a{background-position:0px -160px;}
+.services .serList li h3.sl06 a{background-position:0px -200px;}
+.services .serList li h3.sl07 a{background-position:0px -240px;}
+.services .serList li h3.sl08 a{background-position:0px -280px;}
+.services .serList li h3.sl09 a{background-position:0px -320px;}
+.services .serList li h3.sl10 a{background-position:0px -360px;}
+.services .serList li h3.sl11 a{background-position:0px -400px;}
+.services .serList li h3.sl12 a{background-position:0px -440px;}
+.services .serList li .slcon{width:700px; overflow:hidden; float:left;}
+.services .serList li p{text-indent:0em;}
+.services .serList li p em{width:204px; height:36px; line-height:36px; padding-left:26px; float:left; text-indent:0em; background:url(../images/bg.png)/*tpa=http://www.ebidding.com.cn/r/cms/www/default/images/bg.png*/ no-repeat -50px -191px; font-style:normal;}
+
+
+/* 典型案例页面 */
+.cases{background:url(../images/cases.jpg)/*tpa=http://www.ebidding.com.cn/r/cms/www/default/images/cases.jpg*/ no-repeat center 0px;}
+.cases .leftMenu dl dt h3{background-position:0px -140px;}
+.cases .leftMenu dl dd a:hover,.cases .leftMenu dl dd.cur a{color:#cc8800;}
+.cases .rightCon h2{color:#cc8800;}
+
+.cases .caseList{width:700px; height:220px; overflow:hidden; padding:10px 0px;}
+.cases .caseList li{width:220px; height:200px; float:left; padding-bottom:20px; border-bottom:#ddd 1px dotted;}
+.cases .caseList li + li{margin-left:20px;}
+.cases .caseList li .img{width:220px; height:110px; float:left;}
+.cases .caseList li .img img{width:220px; height:110px;}
+.cases .caseList li .desc{width:220px; height:90px; line-height:30px; overflow:hidden; float:left; color:#888;}
+
+/*
+.cases .caseList li a{width:190px; height:140px; float:left; padding:15px; background-color:#fcfcfc;}
+.cases .caseList li .img,.cases .caseList li .img img{width:190px; height:100px; float:left;}
+.cases .caseList li .txt{width:180px; height:30px; line-height:30px; font-weight:bold; margin-top:10px; text-align:center; padding:0px 5px; float:left; position:relative;}
+.cases .caseList li a:hover{background-color:#eca700; color:#fff;}*/
+
+.cases .casesTitle{color:#666; font-size:17px; font-weight:bold; width:640px; border-bottom:#e5e5e5 1px solid; cursor:default; text-decoration:none; float:left; height:40px; line-height:40px; padding:15px 30px; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; position:relative;}
+.cases .casesTitle .links{position:absolute; top:15px; right:0px;}
+.cases .casesTitle .links a{font-size:14px; color:#888; margin-right:20px; float:left; font-weight:normal;}
+.cases .content p.links span{margin-right:10px;}
+
+
+/* 公司动态页面 */
+.news{background:url(../images/news.jpg)/*tpa=http://www.ebidding.com.cn/r/cms/www/default/images/news.jpg*/ no-repeat center 0px;}
+.news .leftMenu dl dt h3{background-position:0px -210px;}
+.news .leftMenu dl dd a:hover,.news .leftMenu dl dd.cur a{color:#00a786;}
+.news .rightCon h2{color:#00a786;}
+
+.news .textList li .left{width:78px; height:98px; border:#eee 1px solid; border-radius:3px;}
+.news .textList li .left span{width:78px; float:left; text-align:center;}
+.news .textList li .left span.day{width:78px; height:58px; line-height:58px; font-size:32px; color:#00a786; border-bottom:#eee 1px solid;}
+.news .textList li .left span.months{width:78px; height:39px; line-height:39px; background-color:#f9f9f9;}
+.news .textList li .left span.new{color:#e60;}
+.news .textList li .title a{overflow:hidden; height:40px;}
+.news .textList li .title em{font-style:normal; margin-left:10px; font-size:12px;}
+
+.news .newsTitle{color:#666; font-size:17px; font-weight:bold; width:640px; border-bottom:#e5e5e5 1px solid; cursor:default; text-decoration:none; float:left; height:40px; line-height:40px; padding:15px 30px; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+.news .content .newsPic{padding:20px 0px;}
+.news .content .newsPic img{width:600px; margin:0px auto; padding:10px; border:#f5f5f5 1px solid; box-shadow:#eee 0px 0px 5px;}
+.news .content .newsLinks{text-indent:0em; margin-top:20px; padding-top:15px; border-top:#eee 1px solid; overflow:hidden; text-overflow:ellipsis;}
+.news .content .newsLinks a,.news .content .newsLinks span{width:300px; height:40px; line-height:40px; padding:0px 25px; float:left; background:url(../images/newsLinks.png)/*tpa=http://www.ebidding.com.cn/r/cms/www/default/images/newsLinks.png*/ no-repeat 0px 0px;}
+.news .content .newsLinks .left{background-position:left 0px; text-align:left;}
+.news .content .newsLinks a.left:hover{background-position:left -80px;}
+.news .content .newsLinks .right{background-position:right -40px; text-align:right;}
+.news .content .newsLinks a.right:hover{background-position:right -120px;}
+.news .content .newsLinks a:hover{color:#00a786;}
+.news .content p.desc{color:#888; font-family:"楷体"; font-size:15px;}
+.news .content p a.links{color:#00a786; font-weight:bold; margin:0px 3px;}
+
+/* 典型案例页面 */
+.recruit{background:url(../images/recruit.jpg)/*tpa=http://www.ebidding.com.cn/r/cms/www/default/images/recruit.jpg*/ no-repeat center 0px;}
+.recruit .leftMenu dl dt h3{background-position:0px -280px;}
+.recruit .leftMenu dl dd a:hover,.recruit .leftMenu dl dd.cur a{color:#14a000;}
+.recruit .rightCon h2,.recruit .rightCon h3{color:#14a000;}
+
+.recruit .textList li .left{background:url(../images/recruit.png)/*tpa=http://www.ebidding.com.cn/r/cms/www/default/images/recruit.png*/ no-repeat 0px 0px;}
+.recruit .textList li .title em{font-size:14px; color:#14a000; font-style:normal; font-weight:normal; margin-left:5px;}
+.recruit .textList li .title .post,.textList li .title .more{position:absolute; right:0px; top:5px; height:20px; line-height:20px; font-weight:normal; padding:5px 10px; border-radius:3px; color:#999; text-decoration:none;}
+.recruit .textList li .title .post:hover,.recruit .textList li .title .more:hover{background-color:#64bc00; color:#fff;}
+.recruit .textList li .title .more{right:80px;}
+
+.recruit .textList li.rc01 .left{background-position:center 0px;}
+.recruit .textList li.rc02 .left{background-position:center -100px;}
+.recruit .textList li.rc03 .left{background-position:center -200px;}
+.recruit .textList li.rc04 .left{background-position:center -300px;}
+.recruit .textList li.rc05 .left{background-position:center -400px;}
+.recruit .textList li.rc06 .left{background-position:center -500px;}
+.recruit .textList li.rc07 .left{background-position:center -600px;}
+.recruit .textList li.rc08 .left{background-position:center -700px;}
+.recruit .textList li.rc09 .left{background-position:center -800px;}
+.recruit .textList li.rc10 .left{background-position:center -900px;}
+.recruit .textList li.rc11 .left{background-position:center -1000px;}
+.recruit .textList li.rc12 .left{background-position:center -1100px;}
+.recruit .textList li.rc13 .left{background-position:center -1200px;}
+.recruit .textList li.rc14 .left{background-position:center -1300px;}
+.recruit .textList li.rc15 .left{background-position:center -1400px;}
+.recruit .textList li.rc16 .left{background-position:center -1500px;}
+.recruit .textList li.rc17 .left{background-position:center -1600px;}
+.recruit .textList li.rc18 .left{background-position:center -1700px;}
+
+.recruit .recTitle{color:#666; font-size:17px; font-weight:bold; width:640px; border-bottom:#e5e5e5 1px solid; cursor:default; text-decoration:none; float:left; height:40px; line-height:40px; padding:15px 30px; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; position:relative;}
+
+.recruit .content .postCon{overflow:hidden; float:left;}
+.recruit .content .postCon p{padding:0px;}
+.recruit .content .postCon h3{width:672px; padding-left:28px; height:40px; line-height:40px; color:#14A000;}
+
+.recruit .recTitle .links{position:absolute; top:15px; right:0px;}
+.recruit .recTitle .links a{font-size:14px; color:#fff; background-color:#64bc00; padding:0px 10px; height:30px; line-height:30px; margin:5px 0px; border-radius:3px; text-decoration:none; margin-right:20px; float:left; font-weight:normal;}
+.recruit .content p.links span{margin-right:10px;}
